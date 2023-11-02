@@ -6,19 +6,41 @@ public class ExampleBrick {
 		double a = 10, b = 8;
 		double x = 9, y = 9, z = 20;
 		
-		if (a > x || a > y || a > z) {
-			if (b > x) {
-				System.out.println("Проидет.");
-			} else if (b > y) {
-				System.out.println("Проидет.");
-			} else if (b > z) {
-				System.out.println("Проидет.");
-			} else {
-				System.out.println("Не проидет.");
-			}
-		} else {
-			System.out.println("Не проидет.");
-		}
+		if (a > x) {
+            if (b > y) {
+                System.out.println("Пройдёт");
+            }
+
+            if (b > z) {
+                System.out.println("Пройдёт");
+            }
+        } else {
+            System.out.println("Не пройдёт");
+        }
+
+        if (a > y) {
+            if (b > x) {
+                System.out.println("Пройдёт");
+            }
+
+            if (b > z) {
+                System.out.println("Пройдёт");
+            }
+        } else {
+            System.out.println("Не пройдёт");
+        }
+
+        if (a > z) {
+            if (b > y) {
+                System.out.println("Пройдёт");
+            }
+
+            if (b > x) {
+                System.out.println("Пройдёт");
+            }
+        } else {
+            System.out.println("Не пройдёт");
+        }
 	}
 
 }
